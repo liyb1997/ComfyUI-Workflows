@@ -1,0 +1,178 @@
+{
+  "last_node_id": 6,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 5,
+      "type": "Animation Builder (mtb)",
+      "pos": [
+        310,
+        430
+      ],
+      "size": {
+        "0": 210,
+        "1": 320
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "frame",
+          "type": "INT",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "label": "帧数",
+          "slot_index": 0
+        },
+        {
+          "name": "0-1 (scaled)",
+          "type": "FLOAT",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "label": "0-1规格化系数",
+          "slot_index": 1
+        },
+        {
+          "name": "count",
+          "type": "INT",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "label": "循环数",
+          "slot_index": 2
+        },
+        {
+          "name": "loop_ended",
+          "type": "BOOLEAN",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "label": "循环结束",
+          "slot_index": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Animation Builder (mtb)"
+      },
+      "widgets_values": [
+        10,
+        1,
+        2,
+        20,
+        2,
+        "frame: 0 / 9",
+        "Done 😎!",
+        "reset",
+        "queue"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Debug (mtb)",
+      "pos": [
+        580,
+        430
+      ],
+      "size": {
+        "0": 210,
+        "1": 140
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything_1",
+          "type": "INT",
+          "link": 3,
+          "label": "输入_1"
+        },
+        {
+          "name": "anything_2",
+          "type": "FLOAT",
+          "link": 4,
+          "label": "anything_2"
+        },
+        {
+          "name": "anything_3",
+          "type": "INT",
+          "link": 5,
+          "label": "anything_3"
+        },
+        {
+          "name": "anything_4",
+          "type": "BOOLEAN",
+          "link": 6,
+          "label": "anything_4"
+        },
+        {
+          "name": "anything_5",
+          "type": "*",
+          "link": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Debug (mtb)"
+      },
+      "widgets_values": [
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      3,
+      5,
+      0,
+      6,
+      0,
+      "*"
+    ],
+    [
+      4,
+      5,
+      1,
+      6,
+      1,
+      "*"
+    ],
+    [
+      5,
+      5,
+      2,
+      6,
+      2,
+      "*"
+    ],
+    [
+      6,
+      5,
+      3,
+      6,
+      3,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8769226950000005,
+      "offset": [
+        378.3044327812722,
+        249.21056952460313
+      ]
+    },
+    "workspace_info": {
+      "id": "FKkZIlZuLUplUPHtWZIHI"
+    }
+  },
+  "version": 0.4
+}
